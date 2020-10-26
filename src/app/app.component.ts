@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  password = '';
   onGenerate(){
-    console.log('generate');
+    this.password = 'generated password';
   }
 }
